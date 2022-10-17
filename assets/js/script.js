@@ -6,6 +6,7 @@ let input_form = document.input_form,
   transferred_from_input = document.input_form.transferred_from,
   irregular_student_input = document.input_form.irregular_student,
   dropout_student_input = document.input_form.dropout_student,
+  hold_student_input = document.input_form.hold_student,
   admitted_student_output = document.getElementById("admitted_student"),
   postponed_student_output = document.getElementById("postponed_student"),
   cancelled_student_output = document.getElementById("cancelled_student"),
@@ -16,10 +17,10 @@ let input_form = document.input_form,
 
 input_form.addEventListener("keyup", function () {
   //Admitted Student
-   admitted_student_output.innerText = Number(current_student_input.value) + Number(transferred_to_input.value) - Number(transferred_from_input.value);
+   admitted_student_output.innerText = Number(current_student_input.value) + Number(transferred_from_input.value) - Number(transferred_to_input.value);
 
    //Postponed Student
-   postponed_student_output.innerText = Number(postponed_student_input.value)
+   postponed_student_output.innerText = Number(postponed_student_input.value)+ Number(hold_student_input.value)
 
    //Cancelled Student
    cancelled_student_output.innerText = Number(cancelled_student_input.value)
@@ -38,7 +39,8 @@ input_form.addEventListener("keyup", function () {
       Number(postponed_student_input.value) +
       Number(cancelled_student_input.value) +
       Number(irregular_student_input.value) +
-      Number(dropout_student_input.value)
+      Number(dropout_student_input.value)+
+      Number(hold_student_input.value)
    )
 
 
