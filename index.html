@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Project Name</title>
+   <!-- Favicon link -->
+   <link rel="icon" href="./assets/images/logo.png">
+   <!-- Fontawesome Css Link -->
+   <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+   <!-- Slick Css Link -->
+   <link rel="stylesheet" href="./assets/css/slick.min.css">
+   <!-- Bootstrap Css Link -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Main Css Link -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- Responsive Css Link -->
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+
+   <section class="mt-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="card h-100">
+                  <div class="card-header text-white bg-success">
+                     <h2>Data Input</h2>
+                  </div>
+                  <div class="card-body">
+                     <form class="row" name="input_form">
+                        <div class="col-md-12">
+                           <label for="">Current Student In Batch</label>
+                           <input class="form-control mb-3" type="number" name="current_student">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Postponed Student</label>
+                           <input class="form-control mb-3" type="number" name="postponed_student">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Cancelled Student</label>
+                           <input class="form-control mb-3" type="number" name="cancelled_student">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Transferred To</label>
+                           <input class="form-control mb-3" type="number" name="transferred_to">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Transferred From</label>
+                           <input class="form-control mb-3" type="number" name="transferred_from">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Irregular Student</label>
+                           <input class="form-control mb-3" type="number" name="irregular_student">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="">Total Dropout From</label>
+                           <input class="form-control mb-3" type="number" name="dropout_student">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="card h-100">
+                  <div class="card-header text-white bg-success">
+                     <h2>Actual Data</h2>
+                  </div>
+                  <div class="card-body">
+                     <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-info">
+                           <tr>
+                              <th>Title</th>
+                              <th>Amount</th>
+                           </tr>
+                           <tr>
+                              <td>Qty of Admitted Student</td>
+                              <td id="admitted_student">0</td>
+                           </tr>
+                           <tr>
+                              <td>Postponed</td>
+                              <td id="postponed_student">0</td>
+                           </tr>
+                           <tr>
+                              <td>Cancelled</td>
+                              <td id="cancelled_student">0</td>
+                           </tr>
+                           <tr>
+                              <td>Transferred To</td>
+                              <td id="transferred_to">0</td>
+                           </tr>
+                           <tr>
+                              <td>Transferred From</td>
+                              <td id="transferred_from">0</td>
+                           </tr>
+                           <tr>
+                              <td>Irregular Student</td>
+                              <td id="irregular_student">0</td>
+                           </tr>
+                           <tr>
+                              <td>Regular Student</td>
+                              <td id="regular_student">0</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Jquery Js Link -->
+   <script src="./assets/js/jquery-3.6.0.min.js"></script>
+   <!-- Slick Js Link -->
+   <script src="./assets/js/slick.min.js"></script>
+   <!-- Bootstrap Js Link -->
+   <script src="./assets/js/bootstrap.min.js"></script>
+   <!-- Main Js Link -->
+   <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
