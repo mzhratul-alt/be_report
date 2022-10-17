@@ -17,7 +17,7 @@ let input_form = document.input_form,
 
 input_form.addEventListener("keyup", function () {
   //Admitted Student
-   admitted_student_output.innerText = Number(current_student_input.value) + Number(transferred_from_input.value) - Number(transferred_to_input.value);
+   admitted_student_output.innerText = (Number(current_student_input.value) + Number(transferred_from_input.value)) - Number(transferred_to_input.value);
 
    //Postponed Student
    postponed_student_output.innerText = Number(postponed_student_input.value)+ Number(hold_student_input.value)
